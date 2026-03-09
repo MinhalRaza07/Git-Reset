@@ -1,0 +1,39 @@
+git reset command is used in Git to undo commits and move the HEAD to a previous commit. It can also reset the staging area and working directory depending on the option used.
+________________________________________
+Syntax
+git reset [option] <commit>
+________________________________________
+Types of git reset
+1. --soft
+git reset --soft HEAD~1
+Explanation:
+•	Removes the last commit
+•	Keeps the changes in the staging area
+👉 The commit is undone, but the files remain staged.
+________________________________________
+2. --mixed (default)
+git reset --mixed HEAD~1
+Explanation:
+•	Removes the last commit
+•	Removes files from the staging area
+•	Keeps the changes in the working directory
+👉 The files remain modified but are not staged.
+________________________________________
+3. --hard
+git reset --hard HEAD~1
+Explanation:
+•	Removes the last commit
+•	Clears the staging area
+•	Deletes changes in the working directory
+⚠️ Warning: This can permanently delete your changes.
+________________________________________
+Simple Example
+Before reset:
+A --- B --- C (HEAD)
+Command:
+git reset --soft HEAD~1
+After reset:
+A --- B (HEAD)
+Commit C is removed, but the changes from that commit remain staged.
+Now this line is just for seconed commit nothing do in this commit and just this line written for changes . 
+
