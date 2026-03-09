@@ -36,4 +36,5 @@ After reset:
 A --- B (HEAD)
 Commit C is removed, but the changes from that commit remain staged.
 Now this line is just for seconed commit nothing do in this commit and just this line written for changes . 
+Now this line is written for third coomit and this commit undo acording to type of reset soft,mixed and hard .
 
